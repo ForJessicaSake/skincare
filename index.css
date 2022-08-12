@@ -1,0 +1,117 @@
+/*==================================================UNIVERSAL SECTION==============================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Cairo:wght@200&family=Catamaran:wght@100;200;300;400&family=Inconsolata:wght@300&family=Kaushan+Script&family=M+PLUS+1+Code:wght@200&family=Mukta:wght@200&family=Mulish:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Quicksand&family=Quintessential&family=Raleway:wght@200&family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&family=Secular+One&family=Source+Sans+Pro&family=Space+Mono:wght@400;700&family=Stint+Ultra+Condensed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    color: #122e3a;
+}
+
+
+/*==================================================NAVBAR SECTION==============================================*/
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 4%;
+    align-items: center;
+    cursor: pointer;
+}
+
+li:hover {
+    text-decoration: underline;
+    color: #2f7c9d;
+}
+
+.login-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #27647e;
+}
+
+.nav-logo {
+    font-size: 1.2rem;
+}
+
+.links {
+    display: flex;
+    margin: 0px 15px;
+    margin: 0px 15px;
+    width: 600px;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+    font-size: 1.05rem;
+}
+
+.login-btn {
+    border: 1px solid black;
+    padding: 5px 22px;
+    border-radius: 8px;
+    background-color: #2f7c9d;
+    color: white;
+    border: 0px;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+
+/*============NAVBAR MEDIA QUERIES=======*/
+
+@media only screen and (max-width: 900px) and (min-width: 320px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    .hamburger-icon {
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .links {
+        position: absolute;
+        right: 0px;
+        height: 98vh;
+        top: 10vh;
+        background-color: #2f7c9d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8% 0%;
+        color: white;
+        width: 53%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .links li {
+        opacity: 0;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes navLinksfade {
+    from {
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
