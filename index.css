@@ -118,4 +118,24 @@ li:hover {
 /*=================HERO SECTION=========*/
 .hero {
     display: flex;
+    padding-left: 15px;
+}
+h1, p {
+    padding-left: 10px;
+    padding-top: 4px;
+}
+.button {
+    border: 1px solid black;
+    padding: 5px 1px;
+    border-radius: 8px;
+    background-color: #2f7c9d;
+    color: white;
+    border: 0px;
+}
+p {
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+h1 {
+    font-size: 30px;
 }
