@@ -21,7 +21,7 @@ body {
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    margin: 2% 4%;
+    margin: 2% 8%;
     align-items: center;
     cursor: pointer;
 }
@@ -118,23 +118,31 @@ li:hover {
 /*=================HERO SECTION=========*/
 .hero {
     display: flex;
-    padding-left: 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2% 8%;
 }
-h1, p {
-    padding-left: 10px;
-    padding-top: 4px;
+.hero h1 {
+    font-size: 3rem;
+}
+
+.main {
+    font-size: 2rem;
 }
 .button {
     border: 1px solid black;
-    padding: 5px 1px;
+    padding: 10px 2px;
+    font-size: 1rem;
     border-radius: 8px;
     background-color: #2f7c9d;
     color: white;
     border: 0px;
+    width: 150px;
 }
 p {
-    padding-bottom: 10px;
-    padding-left: 15px;
+    font-size: 1rem;
+    margin-bottom: 2%;
+    width: 500px;
 }
 h1 {
     font-size: 30px;
